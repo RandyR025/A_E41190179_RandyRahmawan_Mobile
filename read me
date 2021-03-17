@@ -1,0 +1,7 @@
+echo "# A_E41190179_RandyRahmawan_Mobile" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RandyR025/A_E41190179_RandyRahmawan_Mobile.git
+git push -u origin main
