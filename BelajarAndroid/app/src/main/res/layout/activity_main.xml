@@ -1,105 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:background="@drawable/bggradient">
 
-    <Button
-        android:id="@+id/Button1"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Linier Layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
 
-    <Button
-        android:id="@+id/Button2"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Relative Layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group_3"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Linier\nLayout"
+            />
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic__group2"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Relative\nLayout">
 
-    <Button
-        android:id="@+id/Button3"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Constraint Layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:paddingTop="0dp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
 
-    <Button
-        android:id="@+id/Button4"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Frame Layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group3"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Contraint\nLayout"
+            />
+        <Button
+            android:id="@+id/Button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group4"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Frame\nLayout">
 
-    <Button
-        android:id="@+id/Button5"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Tabel Layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:paddingTop="0dp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
 
-    <Button
-        android:id="@+id/Button6"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Material Design"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        <Button
+            android:id="@+id/Button5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group5"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Tabel\nLayout"
+            />
+        <Button
+            android:id="@+id/Button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group6"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Material\nDesign">
 
-    <Button
-        android:id="@+id/Button8"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Scroll Horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:paddingTop="0dp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
 
-    <Button
-        android:id="@+id/Button7"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:text="Scroll View"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/Button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group7"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Scroll\nView"
+            />
+        <Button
+            android:id="@+id/Button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/ic_group8"
+            android:paddingTop="0dp"
+            android:textColor="@color/black"
+            android:text="Scroll\Horizontal">
+
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
