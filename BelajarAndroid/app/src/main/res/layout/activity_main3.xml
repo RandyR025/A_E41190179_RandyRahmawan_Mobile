@@ -18,18 +18,21 @@
         android:layout_below="@+id/name"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/times"
-        android:entries="@array/datespinner"/>
+        android:entries="@array/datespinner"
+        android:layout_alignParentLeft="true" />
     <Spinner
         android:id="@+id/times"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/name"
         android:layout_alignParentEnd="true"
-        android:entries="@array/timespinner"/>
+        android:entries="@array/timespinner"
+        android:layout_alignParentRight="true" />
     <Button
         android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/times"
         android:layout_alignParentEnd="true"
-        android:text="@string/done" />
+        android:text="@string/done"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>

@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BelajarAndroid">
-        <activity android:name=".scrollviewhorizontal"></activity>
-        <activity android:name=".scrollview" />
+        <activity
+            android:name=".scrollviewhorizontal"
+            android:label="Material Design"></activity>
+        <activity
+            android:name=".scrollview"
+            android:label="Material Design"/>
         <activity
             android:name=".materialdesign"
             android:label="Material Design"
